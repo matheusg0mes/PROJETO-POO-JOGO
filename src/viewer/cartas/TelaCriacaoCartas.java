@@ -1,4 +1,4 @@
-package viewer;
+package viewer.cartas;
 
 import controller.CartasController;
 import exceptions.Exceptions;
@@ -10,7 +10,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import model.Cartas;
 
-public class TelaCriacaoJogador {
+public class TelaCriacaoCartas {
 
     private static TextField id;
     private static TextField velocidade;
@@ -49,7 +49,12 @@ public class TelaCriacaoJogador {
         btnCriar.setTranslateY(100);
         btnCriar.setTranslateX(100);
 
-        VBox vbox = new VBox(idLb, id, velocidadeLB, velocidade, alturaLB, altura, btnCriar);
+        Button btnVoltar = new Button("Voltar");
+        btnVoltar.setOnAction(e -> MenuCartas.start(stage));
+        btnVoltar.setTranslateY(75);
+        btnVoltar.setTranslateX(200);
+
+        VBox vbox = new VBox(idLb, id, velocidadeLB, velocidade, alturaLB, altura, btnCriar,btnVoltar);
 
         stage.setScene(new Scene(vbox, 400, 500));
         stage.show();

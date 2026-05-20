@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff6e33fe-c6ef-4142-bb26-9091e30d50be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/MenuCartas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaAtualizarCartas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaBuscarCartas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaDeletarCartas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CartasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CartasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/CartasService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/cartas/CartasService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/CartasServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/cartas/CartasServiceI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/Tela.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/Tela.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/TelaCriacaoJogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaCriacaoCartas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +54,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.Tela.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mathe/OneDrive/Área de Trabalho/JOGO_POO/Jogo",
@@ -64,6 +74,29 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mathe\OneDrive\Área de Trabalho\JOGO_POO\Jogo" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="viewer.cartas" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="program.Main" />
+      <module name="Jogo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="program.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

@@ -1,4 +1,4 @@
-package service;
+package service.cartas;
 
 import controller.CartasController;
 import model.Cartas;

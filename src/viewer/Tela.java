@@ -1,35 +1,44 @@
 package viewer;
 
 import javafx.application.Application;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import viewer.cartas.MenuCartas;
+import viewer.cartas.TelaCriacaoCartas;
 
 public class Tela extends Application {
     @Override
     public void start(Stage stage) throws Exception {
+        Pane pane = new Pane();
 
+        //configuração Label
         Label label = new Label("Bem-vindo ao Jogo!");
-        Button btnIniciar = new Button("Iniciar Jogo");
+        VBox boxLabel = new VBox(label);
 
-        label.setTranslateY(10); // margem do topo
+        label.setFont(Font.font("Arial",20));
+        boxLabel.setLayoutX(200);
+        boxLabel.setLayoutY(50);
+        pane.getChildren().add(boxLabel);
 
-        VBox root = new VBox(label);
-        root.setAlignment(javafx.geometry.Pos.TOP_CENTER);
+        //configuração butao
+        Button btnIniciar = new Button("Cartas");
+        VBox boxBtnIniciar = new VBox(btnIniciar);
 
-        VBox center = new VBox(btnIniciar);
-        center.setAlignment(javafx.geometry.Pos.CENTER);
+        boxBtnIniciar.setLayoutX(120);
+        boxBtnIniciar.setLayoutY(130);
+        btnIniciar.setMinHeight(40);
+        btnIniciar.setMinWidth(60);
+        pane.getChildren().add(boxBtnIniciar);
 
-        BorderPane borderPane = new BorderPane();
-        borderPane.setTop(root);
-        borderPane.setCenter(center);
-
-        btnIniciar.setOnAction(e -> TelaCriacaoJogador.abrir(stage));
-        stage.setScene(new Scene(borderPane, 400, 300));
+        //configuração evento de chamada de tela
+        btnIniciar.setOnAction(e -> MenuCartas.start(stage));
+        stage.setScene(new Scene(pane, 600, 600));
         stage.setTitle("Jogo de Cartas");
         stage.show();
     }

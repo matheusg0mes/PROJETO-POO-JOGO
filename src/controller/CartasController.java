@@ -1,7 +1,7 @@
 package controller;
 
 import model.Cartas;
-import service.CartasService;
+import service.cartas.CartasService;
 
 public class CartasController {
 
