@@ -1,67 +1,77 @@
 package viewer;
 
-import javafx.application.Application;
-import javafx.geometry.Pos;
+import controller.CartasController;
+import exceptions.Exceptions;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import model.Cartas;
 
-public class TelaCriacaoJogador  {
+public class TelaCriacaoJogador {
 
-    public static void abrir(Stage stage)  {
-        Label idLb = new Label("Digite o id do jogador");
+    private static TextField id;
+    private static TextField velocidade;
+    private static TextField altura;
 
+    public static void abrir(Stage stage) {
+        Label idLb = new Label("Digite o id da carta");
         idLb.setTranslateY(10);
 
-        TextField id = new TextField();
+        id = new TextField();
         id.setPromptText("Digite o id");
-
         id.setTranslateY(20);
         id.setMaxWidth(200);
         id.setMaxHeight(30);
 
-        Label nomeLb = new Label("Digite o nome do jogador");
+        Label velocidadeLB = new Label("Digite a velocidade");
+        velocidadeLB.setTranslateY(30);
 
-        nomeLb.setTranslateY(30);
+        velocidade = new TextField();
+        velocidade.setPromptText("Digite a velocidade");
+        velocidade.setTranslateY(30);
+        velocidade.setMaxWidth(200);
+        velocidade.setMaxHeight(30);
 
-        TextField nome = new TextField();
-        nome.setPromptText("Digite o nome");
+        Label alturaLB = new Label("Digite a altura");
+        alturaLB.setTranslateY(30);
 
-        nome.setTranslateY(30);
-        nome.setMaxWidth(200);
-        nome.setMaxHeight(30);
+        altura = new TextField();
+        altura.setPromptText("Digite a altura");
+        altura.setTranslateY(30);
+        altura.setMaxWidth(200);
+        altura.setMaxHeight(30);
 
-        Label deckLb = new Label("Digite o id do deck");
-
-        deckLb.setTranslateY(30);
-
-        TextField deck = new TextField();
-        deck.setPromptText("Digite id do deck");
-
-        deck.setTranslateY(30);
-        deck.setMaxWidth(200);
-        deck.setMaxHeight(30);
-
-        Button btnCriar = new Button("Criar Jogador");
-
+        Button btnCriar = new Button("Criar Carta");
         btnCriar.setOnAction(e -> resposta());
-
         btnCriar.setTranslateY(100);
         btnCriar.setTranslateX(100);
 
-        VBox vbox = new VBox(idLb,id,nomeLb,nome,deckLb,deck,btnCriar);
+        VBox vbox = new VBox(idLb, id, velocidadeLB, velocidade, alturaLB, altura, btnCriar);
 
-        stage.setScene(new Scene(vbox,400,500));
+        stage.setScene(new Scene(vbox, 400, 500));
         stage.show();
     }
 
-    public static void resposta(){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Jogador criado com sucesso");
-        alert.show();
+    private static void resposta() {
+        try {
+            Integer idVal         = Integer.parseInt(id.getText().trim());
+            Double velocidadeVal = Double.parseDouble(velocidade.getText().trim());
+            Double alturaVal     = Double.parseDouble(altura.getText().trim());
+
+            Cartas carta = new Cartas(idVal, velocidadeVal, alturaVal);
+
+            CartasController controller = new CartasController();
+           Cartas criado = controller.cadastrarCartas(carta);
+
+            System.out.println("Carta criada com sucesso!");
+
+        } catch (NumberFormatException ex) {
+            System.out.println("Preencha todos os campos com números válidos!");
+        } catch (Exceptions ex) {
+            System.out.println("Erro: " + ex.getMessage());
+        }
     }
 }

@@ -3,10 +3,10 @@ package model;
 public class Cartas {
 
     private Integer id;
-    private Integer velocidade;
-    private Integer altura;
+    private Double velocidade;
+    private Double altura;
 
-    public Cartas(Integer id, Integer velocidade, Integer altura) {
+    public Cartas(Integer id, Double velocidade, Double altura) {
         this.id = id;
         this.velocidade = velocidade;
         this.altura = altura;
@@ -16,11 +16,11 @@ public class Cartas {
         return id;
     }
 
-    public Integer getVelocidade() {
+    public Double getVelocidade() {
         return velocidade;
     }
 
-    public Integer getAltura() {
+    public Double getAltura() {
         return altura;
     }
 
@@ -28,11 +28,11 @@ public class Cartas {
         this.id = id;
     }
 
-    public void setVelocidade(Integer velocidade) {
+    public void setVelocidade(Double velocidade) {
         this.velocidade = velocidade;
     }
 
-    public void setAltura(Integer altura) {
+    public void setAltura(Double altura) {
         this.altura = altura;
     }
 }
