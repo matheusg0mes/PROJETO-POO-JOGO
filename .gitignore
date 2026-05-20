@@ -1,0 +1,14 @@
+
+/shelf/
+/workspace.xml
+
+/queries/
+
+/dataSources/
+/dataSources.local.xml
+
+.db.properties
+
+.gitignoredb.properties
+*.iml
+out/
