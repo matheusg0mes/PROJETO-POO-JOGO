@@ -6,7 +6,7 @@ import repository.CartasRepository;
 
 public class CartasService implements  CartasServiceI{
 
-    CartasRepository repository = new CartasRepository();
+   final CartasRepository repository = new CartasRepository();
 
 
     @Override
@@ -15,17 +15,17 @@ public class CartasService implements  CartasServiceI{
     }
 
     @Override
-    public CartasController atualizar(Integer id) {
-        return null;
+    public Cartas atualizar(Cartas atualizar) {
+        return repository.atualizar(atualizar);
     }
 
     @Override
-    public CartasController buscar(Integer id) {
-        return null;
+    public Cartas buscarporid(Integer id) {
+        return repository.buscarPorId(id);
     }
 
     @Override
     public void deletar(Integer id) {
-
+       repository.deletarPorId(id);
     }
 }

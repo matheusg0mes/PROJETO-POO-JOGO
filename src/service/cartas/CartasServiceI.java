@@ -7,9 +7,9 @@ public interface CartasServiceI {
 
     public Cartas criar(Cartas novo);
 
-    public CartasController atualizar(Integer id);
+    public Cartas atualizar(Cartas atualizar);
 
-    public CartasController buscar(Integer id);
+    public Cartas buscarporid(Integer id);
 
     public void deletar(Integer id);
 }

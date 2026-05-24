@@ -2,16 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff6e33fe-c6ef-4142-bb26-9091e30d50be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/MenuCartas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaAtualizarCartas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaBuscarCartas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaDeletarCartas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/InstanciasMusicas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/Neon-Apex-Run.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/click.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/menucartas/MenuCartas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/menucartas/menuCartas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewer/cartas/ph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewer/telainicial/Tela.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/viewer/telainicial/menuInicial.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/CartasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CartasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/CartasService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/cartas/CartasService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/CartasServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/cartas/CartasServiceI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewer/Tela.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/Tela.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/viewer/TelaCriacaoJogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaCriacaoCartas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/program/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/program/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/CartasRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/CartasRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/cartas/CartasService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/cartas/CartasService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/cartas/CartasServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/cartas/CartasServiceI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/Tela.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/cartas/MenuCartas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/cartas/TelaAtualizarCartas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaAtualizarCartas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/cartas/TelaBuscarCartas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaBuscarCartas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/cartas/TelaCriacaoCartas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaCriacaoCartas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewer/cartas/TelaDeletarCartas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewer/cartas/TelaDeletarCartas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,14 +74,23 @@
     "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mathe/OneDrive/Área de Trabalho/JOGO_POO/Jogo",
+    "last_opened_file_path": "C:/Users/mathe/OneDrive/Área de Trabalho/JOGO_POO/Jogo/src/viewer/cartas",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mathe\OneDrive\Área de Trabalho\JOGO_POO\Jogo\src\viewer\cartas" />
+      <recent name="C:\Users\mathe\OneDrive\Área de Trabalho\JOGO_POO\Jogo\src\music" />
+      <recent name="C:\Users\mathe\OneDrive\Área de Trabalho\JOGO_POO\Jogo\src\program" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mathe\OneDrive\Área de Trabalho\JOGO_POO\Jogo\src\viewer\telainicial" />
+      <recent name="C:\Users\mathe\OneDrive\Área de Trabalho\JOGO_POO\Jogo\src\viewer\cartas\menucartas" />
+      <recent name="C:\Users\mathe\OneDrive\Área de Trabalho\JOGO_POO\Jogo\src\music" />
       <recent name="C:\Users\mathe\OneDrive\Área de Trabalho\JOGO_POO\Jogo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
