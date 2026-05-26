@@ -9,18 +9,19 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import music.InstanciasMusicas;
+import viewer.jogo.TelaJogo;
 import viewer.menucartas.MenuCartas;
 
 public class Tela extends Application {
 
-    InstanciasMusicas musica = new InstanciasMusicas();
+
     static Integer cont = 0;
 
     @Override
     public void start(Stage stage) {
 
-        if(cont == 0) {
-            musica.musicaMenu();
+        if (cont == 0) {
+            InstanciasMusicas.tocarMenu();
             cont++;
         }
 
@@ -58,9 +59,15 @@ public class Tela extends Application {
         pane.setStyle("-fx-background-image: url('viewer/telainicial/menuInicial.jpeg');");
         //configuração evento de chamada de tela
         btnIniciar.setOnAction(e -> {
-            musica.musicaClick();
+            InstanciasMusicas.tocarClick();
             MenuCartas.start(stage);
         });
+
+        btnJogar.setOnAction(e -> {
+                    InstanciasMusicas.tocarClick();
+                    TelaJogo.start(stage);
+                }
+        );
         stage.setScene(new Scene(pane, 500, 400));
         stage.setTitle("Jogo de Cartas");
         stage.show();

@@ -81,19 +81,19 @@ public class MenuCartas {
         btnVoltar.setOnAction(e -> new Tela().start(stage));
         btnCriar.setOnAction(e -> {
             TelaCriacaoCartas.abrir(stage);
-            musica.musicaClick();
+            InstanciasMusicas.tocarClick();
         });
         btnBuscar.setOnAction(e -> {
             TelaBuscarCartas.abrir(stage);
-            musica.musicaClick();
+            InstanciasMusicas.tocarClick();
         });
         btnAlterar.setOnAction(e -> {
             TelaAtualizarCartas.abrir(stage);
-            musica.musicaClick();
+            InstanciasMusicas.tocarClick();
         });
         btnDeleta.setOnAction(e -> {
             TelaDeletarCartas.abrir(stage);
-            musica.musicaClick();
+            InstanciasMusicas.tocarClick();
         });
 
         pane.setStyle("-fx-background-image: url('viewer/menucartas/menuCartas.png');");

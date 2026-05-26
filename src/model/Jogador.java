@@ -1,16 +1,18 @@
 package model;
 
+import java.util.Stack;
+
 public class Jogador {
 
     private Integer id;
     private String nome;
 
-    private Baralho baralho;
+    private Stack<Cartas> cartas;
 
-    public Jogador(Integer id, String nome, Baralho baralho) {
+    public Jogador(Integer id, String nome, Stack<Cartas> baralho) {
         this.id = id;
         this.nome = nome;
-        this.baralho = baralho;
+        this.cartas = baralho;
     }
 
     public Integer getId() {
@@ -21,8 +23,8 @@ public class Jogador {
         return nome;
     }
 
-    public Baralho getBaralho() {
-        return baralho;
+    public Stack<Cartas> getBaralho() {
+        return cartas;
     }
 
     public void setId(Integer id) {
@@ -33,7 +35,7 @@ public class Jogador {
         this.nome = nome;
     }
 
-    public void setBaralho(Baralho baralho) {
-        this.baralho = baralho;
+    public void setBaralho(Stack<Cartas> cartas) {
+        this.cartas = cartas;
     }
 }
